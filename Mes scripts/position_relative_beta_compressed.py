@@ -1,0 +1,77 @@
+def diff() :
+    print("Programme utile pour la position relative.\nVous avez besoin de 2 polynome développé.")
+    a=float(input("Choix de a (1er fonction) : "))
+    b=float(input("Choix de b (1er fonction) : "))
+    c=float(input("Choix de c (1er fonction) : "))
+    d=float(input("Choix de a (2em fonction) : "))
+    e=float(input("Choix de b (2em fonction) : "))
+    f=float(input("Choix de c (2em fonction) : "))
+    A=str(a)
+    B=str(b)
+    C=str(c)
+    D=str(d) 
+    F=str(f)
+    E=str(e)
+    print("\nf(x) = "+A+"x2+"+B+"x+"+C)
+    print("g(x) = "+D+"x2+"+E+"x+"+F+"\n")
+    print(A+"x**2+"+B+"x+"+C+"-("+D+"x**2+"+E+"x+"+F)
+    print(A+"x**2+"+B+"x+"+C+"-"+D+"x**2-"+E+"x-"+F)
+    print(str(a-d)+"x**2+"+str(b-e)+"x+"+str(c-f))
+    print("delta = ("+str(b-e)+"**2-4*"+str(b-e)+"*"+str(c-f))
+    print("delta = "+str((b-e)**2)+"-"+str(4*(a-d)*(c-f)))
+    print("delta = "+str(((b-e)**2)-(4*(a-d)*(c-f)))+"\n")
+    delta=((b-e)**2)-(4*(a-d)*(c-f))
+    if delta<0:
+        if a-d<0:
+            print("  x / -∞           +∞")
+            print("f-g /   négatif      ")
+            print("Donc Cg est au dessus de Cf sur |R")
+        elif a-d>0:
+            print("  x / -∞           +∞")
+            print("f-g /   positif      ")
+            print("Donc Cf est au dessus de Cg sur |R")
+    elif delta==0:
+        if a-d<0:
+            print("X0 = -"+str(b-e)+"/2*"+str(a-d))
+            print("X0 = "+str(e-b)+"/"+str(2*(a-d)))
+            print("X0 = "+str((e-b)/(2*(a-d)))+"\n")
+            X0=str((e-b)/(2*(a-d)))
+            print("  x / -∞   "+str(X0)+"    +∞")
+            print("f-g /   négatif/négatif     ")
+            print("Donc Cg est au dessus de cf sur |R-{"+X0+"}")
+        elifa-d>0:
+            print("X0 = -"+str(b-e)+"/2*"+str(a-d))
+            print("X0 = "+str(e-b)+"/"+str(2*(a-d)))
+            print("X0 = "+str((e-b)/(2*(a-d)))+"\n")
+            X0=str((e-b)/(2*(a-d)))
+            print("  x / -∞   "+str(X0)+"    +∞")
+            print("f-g /   positif/positif     ")
+            print("Donc Cf est au dessus de Cg sur |R-{"+X0+"}")
+    elif delta>0:
+        print("X1 = (-"+str(b-e)+"+√"+str(delta)+")/2*"+str(a-d))
+        print("X1 = "+str(((e-b)+(delta**0.5)))+"/"+str(2*(a-d)))
+        print("X1 = "+str(((e-b)+(delta**0.5))/(2*(a-d)))+"\n")
+        print("X2 = (-"+str(b-e)+"-√"+str(delta)+")/2*"+str(a-d))
+        print("X2 = "+str(((e-b)-(delta**0.5)))+"/"+str(2*(a-d)))
+        print("X2 = "+str(((e-b)-(delta**0.5))/(2*(a-d)))+"\n")
+        X1=((e-b)-(delta**0.5))/(2*(a-d))
+        X2=((e-b)+(delta**0.5))/(2*(a-d))
+        if (a-d)>0:
+            if X1<X2:
+                print("  x / -∞   "+str(X1)+"/"+str(X2)+"    +∞")
+                print("f-g /   positif/négatif/positif     ")
+                print("Donc Cf est au dessus de Cg sur ]-∞;"+str(X1)+"[U]"+str(X2)+";+∞[")
+            elif X2<X1:
+                print("  x / -∞   "+str(X2)+"/"+str(X1)+"    +∞")
+                print("f-g /   positif/négatif/positif     ")
+                print("Donc Cf est au dessus de Cg sur ]-∞;"+str(X2)+"[U]"+str(X1)+";+∞[")
+        elif (a-d)<0:
+            if X1<X2:
+                print("  x / -∞   "+str(X1)+"/"+str(X2)+"    +∞")
+                print("f-g /   négatif/positif/négatif     ")
+                print("Donc Cg est au dessus de Cf sur ]-∞;"+str(X1)+"[U]"+str(X2)+";+∞[")
+            elif X2<X1:
+                print("  x / -∞   "+str(X2)+"/"+str(X1)+"    +∞")
+                print("f-g /   négatif/positif/négatif    ")
+                print("Donc Cg est au dessus de Cf sur ]-∞;"+str(X2)+"[U]"+str(X1)+";+∞[")
+diff()
