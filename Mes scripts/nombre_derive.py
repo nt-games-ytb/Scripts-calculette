@@ -13,6 +13,8 @@ def derive2e():
     C = str(c)
     D = str(d)
 
+    nb = (2*a*d)+b
+
     print("")
     print("")
 
@@ -42,6 +44,16 @@ def derive2e():
     print("f'("+D+") = "+str((2*d*a)+b))
     print("")
 
+    print("On sait que le coefficient directeur est egal au nombre derivé donc :")
+    print("")
+    print("y = "+str(nb)+"x+b")
+    print(str(a*(d**2)+b*d+c)+" = "+str(nb)+"*"+D+"+b")
+    print("b = "+str(a*(d**2)+b*d+c)+"-"+str(nb*d))
+    print("b = "+str((a*(d**2)+b*d+c)-(nb*d)))
+    print("")
+    print("y = "+str(nb)+"x+"+str((a*(d**2)+b*d+c)-(nb*d)))
+    print("")
+
 def derive3e() :
     a = float(input("Choix de a : "))
     b = float(input("Choix de b : "))
@@ -54,6 +66,8 @@ def derive3e() :
     C = str(c)
     D = str(d)
     E = str(e)
+
+    nb = (3*a*(e**2))+(2*b*e)+c
 
     print("")
     print("")
@@ -79,6 +93,16 @@ def derive3e() :
     print("")
 
     print("f'("+E+") = "+str((a*3*(e**2))+(2*e*b)+c))
+    print("")
+
+    print("On sait que le coefficient directeur est egal au nombre derivé donc :")
+    print("")
+    print("y = "+str(nb)+"x+b")
+    print(str(a*(e**3)+b*(e**2)+c*e+d)+" = "+str(nb)+"*"+E+"+b")
+    print("b = "+str(a*(e**3)+b*(e**2)+c*e+d)+"-"+str(nb*e))
+    print("b = "+str((a*(e**3)+b*(e**2)+c*e+d)-(nb*e)))
+    print("")
+    print("y = "+str(nb)+"x+"+str((a*(e**3)+b*(e**2)+c*e+d)-(nb*e)))
     print("")
 
 activer = True
