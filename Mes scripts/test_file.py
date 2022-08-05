@@ -1,0 +1,8 @@
+save_w = open('a.txt','w')
+save_w.close()
+#save_w = open('b.txt','w')
+#save_w.close()
+#file=open("snake.sav","w")
+#file.truncate(0)
+#file.write(str(12))
+#file.close()

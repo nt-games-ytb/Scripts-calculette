@@ -1,0 +1,9 @@
+! = Dangereux, nocif irritant
+Feu = Inflammable
+Bouteille = Gaz sous pression
+Poisson mort = Polluant pour l'environnement
+Humain avec étoile = Produit dangereux pour la santé
+Bombe = Explosif
+Feu avec rond = Comburant
+Fiole = Corrosif
+Tête de mort = Toxique
