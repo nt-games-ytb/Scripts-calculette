@@ -23,7 +23,7 @@ Tableau des formules :
 f'(x)  = v'(x) * u'(v(x))
 
 [f(a+h) - f(a)] / h
-y = f'(x) (x-a) + f(a)
+y = f'(a) (x-a) + f(a)
 
 Position relative de Cf et Cg avec g(x)
 f(x) [ton ancienne fonction] - g(x) [la fonction donné dans la question]
@@ -31,7 +31,7 @@ f(x) [ton ancienne fonction] - g(x) [la fonction donné dans la question]
 - Développer et mettre au même dénominateur si fraction
 - à la fin ta un polynome (sur une fraction peut-être)
 - faire delta, puis les racines
-- puis faure tableau de signe
+- puis faire tableau de signe
 et dire "Cf et Cg son relative en ]["
 ou "f(x) =< g(x) sur ][(--> les positions ou c'est négatif)"
 ou mieux, dire : "cf est au dessus de cg en ]["
